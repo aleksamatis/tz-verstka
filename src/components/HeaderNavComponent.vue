@@ -47,17 +47,30 @@
   height: 60px;
 }
 .roundphone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 35px;
   height: 35px;
   background: linear-gradient(132.92deg, #1C6CD1 9.16%, #0B74A8 87.83%);
   border-radius: 60px;
 }
+.roundphone img {
+  width: 21px;
+  height: 21px;}
 .baselinemenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 35px;
   height: 35px;
   background: transparent;
   border-radius: 60px;
   border: 1px solid #fff;
+}
+.baselinemenu img {
+  width:21px;
+  height:21px;
 }
 
 .main-menu-small {

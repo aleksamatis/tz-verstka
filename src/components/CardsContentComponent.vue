@@ -78,7 +78,7 @@
 }
 
 .cards-content h2 {
-  font-family: Prosto One;
+  font-family:'Prosto One';
   font-weight: 400px;
   font-size: 25px;
   line-height: 30.62px;
@@ -91,7 +91,7 @@
   line-height: 15px;
 }
 .cards-content .cards-content-item-2 h2 {
-  font-family: Prosto One;
+  font-family:'Prosto One';
   font-weight: 400px;
   font-size: 25px;
   line-height: 30.62px;
@@ -139,10 +139,28 @@
   text-transform: uppercase;
 }
 
+
+@media (max-width: 1170px){
+    .main-container .cards-content {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
 @media (max-width: 1085px){
     .main-container .cards-content {
         flex-wrap: wrap;
         justify-content: center;
+        padding-left: 83px;
+        padding-right: 83px;
+    }
+
+    .cards-content-item div {
+      font-size: 18px;
+    }
+
+    .cards-content-item div span {
+      font-size: 18px;
     }
 }
 </style>

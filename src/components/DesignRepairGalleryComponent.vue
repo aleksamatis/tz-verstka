@@ -16,7 +16,10 @@ const itemIndex = ref(0)
         </el-carousel>
         
         <div class="title">Дизайнерский ремонт</div>
+        <div class="description-gallery-counter">
         <div class="description">ЖК «Пироговская Ривьера», 104 м²</div>
+        <div class="gallery-counter"><span class="gallery-counter-changed">{{ itemIndex }}</span><span class="gallery-counter-number">/6</span></div>
+        </div>
       </div>
      
     </div>
@@ -53,7 +56,24 @@ const itemIndex = ref(0)
   font-size: 16px;
   line-height: 19px;
   color: rgba(255, 255, 255, 0.7);
-  text-align: left;
+  display: flex;
+}
+.main-gallery div.gallery-counter {
+  font-family:'Prosto One';
+  color: #fff;
+}
+.description-gallery-counter{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.gallery-counter-changed {
+  font-size: 35px;
+}
+
+.gallery-counter-number {
+  color:#C3C3C3;
 }
 .el-carousel__item h3 {
     color: #475669;

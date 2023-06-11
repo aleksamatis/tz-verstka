@@ -19,20 +19,6 @@
       />
       <button class="btn">Заказать звонок</button>
     </div>
-    <div class="submission-form-small">
-      <div>
-        <input
-          class="submission-form-accuracy-small"
-          placeholder="Введите Ваш номер телефона"
-          type="tel"
-          id="phone"
-          name="phone"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          required
-        />
-      </div>
-      <button class="btn">Заказать звонок</button>
-    </div>
   </div>
 </template>
 
@@ -47,11 +33,6 @@
   width: 235px;
   height: 60px;
 }
-.submission-form-small .btn {
-  width: 280px;
-  height: 60px;
-}
-
 .main-cointer-title {
   font-size: 40px;
   color: #fff;
@@ -83,7 +64,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 62px;
+  /* height: 62px; */
   background: #202020;
   border: 1px solid #818181;
   box-shadow: inset 0px 0px 15px 11px rgba(0, 0, 0, 0.25);
@@ -102,53 +83,40 @@
   border: 0;
   outline: none;
 }
-
-.submission-form-accuracy-small {
-  width: 280px;
-  height: 62px;
-  background: #202020;
-  border: 1px solid #818181;
-  box-shadow: inset 0px 0px 15px 11px rgba(0, 0, 0, 0.25);
-  border-radius: 60px;
-  padding-left: 20px;
-}
-
-.submission-form-accuracy-small:focus-visible {
-  border: 0;
-  outline: none;
-}
-
 .submission-form .btn {
   flex-shrink: 0;
   flex-grow: 0;
   border: none;
 }
 
-.submission-form-small .btn {
-  flex-shrink: 0;
-  flex-grow: 0;
-  border: none;
-}
-.submission-form-small {
-  display: none;
-}
-
 @media (max-width: 1085px){
     .submission-form {
-        display: none;
+        display: block;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
     }
-    .submission-form-small{
-      display: block;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
+    .submission-form > * {
+        display: block;
+    }
+    .submission-form input {
+      background: #202020;
+      border: 1px solid #818181;
+      box-shadow: inset 0px 0px 15px 11px rgba(0, 0, 0, 0.25);
+      border-radius: 60px;
+      width: 100%;
+      height: 60px;
     }
     .main-cointer-title {
       font-size: 20px;
     }
-
     .main-container-description {
       font-size: 14px;
+    }
+
+    .submission-form .btn {
+      width: 100%;
+      border: none;
     }
 }
 </style>
