@@ -21,7 +21,6 @@ const itemIndex = ref(0)
         <div class="gallery-counter"><span class="gallery-counter-changed">{{ itemIndex }}</span><span class="gallery-counter-number">/6</span></div>
         </div>
       </div>
-     
     </div>
   </div>
 </template>
