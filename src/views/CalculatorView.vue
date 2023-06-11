@@ -3,6 +3,7 @@ import FormSubmissionComponent from '@/components/FormSubmissionComponent.vue'
 import HeaderNavComponent from '@/components/HeaderNavComponent.vue'
 import CardsContentComponent from '@/components/CardsContentComponent.vue'
 import ClientsComponent from '@/components/ClientsComponent.vue'
+import DetailDesignComponent from '@/components/DetailDesignComponent.vue'
 import CalculatorComponent from '@/components/CalculatorComponent.vue'
 </script>
 
@@ -10,13 +11,9 @@ import CalculatorComponent from '@/components/CalculatorComponent.vue'
   <header>
     <HeaderNavComponent />
     <div class="header-content">
-      <div class="header-left-wrap">
-        <div class="header-left">
-          <FormSubmissionComponent />
-          <ClientsComponent />
-        </div>
-        <CalculatorComponent />
-      </div>
+      <FormSubmissionComponent class="header-submission" />
+      <ClientsComponent class="header-clients" />
+      <CalculatorComponent class="header-calculator" />
     </div>
   </header>
   <DetailDesignComponent />
@@ -35,33 +32,61 @@ header {
   );
 }
 
-@media (max-width: 1770px){
-    header {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-  }
-
-@media (max-width: 1085px){
+@media (max-width: 1770px) {
   header {
-      padding-left: 83px;
-      padding-right: 83px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
-.header-content > div {
-  display: flex;
+@media (max-width: 1085px) {
+  header {
+    padding-left: 83px;
+    padding-right: 83px;
+  }
+}
+
+.header-content {
+  display: grid;
+  grid-template-areas:
+    'submission gallery'
+    'clients gallery';
+  grid-template-columns: 1fr 1fr;
+  column-gap: 49px;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.header-submission {
+  grid-area: submission;
+}
+
+.header-clients {
+  grid-area: clients;
+}
+
+.header-calculator {
+  grid-area: gallery;
+  height: 100%;
+  width: 100%;
 }
 
 .header-left {
   padding-right: 49px;
 }
 
-@media (max-width: 1085px){
-    .header-left-wrap {
-        flex-wrap: wrap;
-    }
+@media (max-width: 1085px) {
+  .header-content {
+    grid-template-areas:
+      'submission'
+      'clients'
+      'gallery';
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .header-left {
+    padding: 0;
+  }
 }
 </style>

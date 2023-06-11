@@ -1,5 +1,5 @@
 <script setup>
-import {ref} from 'vue';
+import { ref } from 'vue'
 const value1 = ref(0)
 const formatTooltip = (val) => {
   return val / 100
@@ -7,7 +7,7 @@ const formatTooltip = (val) => {
 const radio1 = ref('New York')
 </script>
 <template>
-    <div class="main-container">
+  <div class="main-container">
     <div class="flex-str">
       <div class="slider-block">
         <span class="demonstration">Default value</span>
@@ -15,22 +15,20 @@ const radio1 = ref('New York')
       </div>
       <div>
         <el-radio-group v-model="radio1" size="large">
-        <el-radio-button label="New York" />
-        <el-radio-button label="Washington" />
-        <el-radio-button label="Los Angeles" />
-        <el-radio-button label="Chicago" />
+          <el-radio-button label="New York" />
+          <el-radio-button label="Washington" />
+          <el-radio-button label="Los Angeles" />
+          <el-radio-button label="Chicago" />
         </el-radio-group>
       </div>
     </div>
-</div>
+  </div>
 </template>
 
 <style scoped>
 .main-container {
   width: 570px;
   height: 538px;
-  left: 815px;
-  top: 187px;
   /* background: rgba(255, 255, 255, 0.1); */
   background: red;
   backdrop-filter: blur(5px);
@@ -41,7 +39,6 @@ const radio1 = ref('New York')
   display: flex;
   justify-content: space-between;
 }
-
 
 /* ::v-deep(.el-carousel__item) {
   border-radius: 40px;
@@ -68,5 +65,4 @@ const radio1 = ref('New York')
 .slider-block .demonstration + .el-slider {
   flex: 0 0 70%;
 }
- 
 </style>

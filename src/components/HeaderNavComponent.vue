@@ -52,12 +52,13 @@
   align-items: center;
   width: 35px;
   height: 35px;
-  background: linear-gradient(132.92deg, #1C6CD1 9.16%, #0B74A8 87.83%);
+  background: linear-gradient(132.92deg, #1c6cd1 9.16%, #0b74a8 87.83%);
   border-radius: 60px;
 }
 .roundphone img {
   width: 21px;
-  height: 21px;}
+  height: 21px;
+}
 .baselinemenu {
   display: flex;
   justify-content: center;
@@ -69,27 +70,27 @@
   border: 1px solid #fff;
 }
 .baselinemenu img {
-  width:21px;
-  height:21px;
+  width: 21px;
+  height: 21px;
 }
 
 .main-menu-small {
   display: none;
 }
 
-@media (max-width: 900px){
-    .main-menu {
-        display: none;
-    }
-    .main-menu-content-small{
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .main-menu-small {
-      display: block;
-      padding: 40px 0;
-    }
+@media (max-width: 900px) {
+  .main-menu {
+    display: none;
+  }
+  .main-menu-content-small {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-menu-small {
+    display: block;
+    padding: 40px 0;
+  }
 }
 </style>

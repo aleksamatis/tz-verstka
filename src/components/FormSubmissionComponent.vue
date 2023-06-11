@@ -1,11 +1,13 @@
 <script setup></script>
 
 <template>
-  <div class="main-container">
+  <form class="main-container">
     <div class="main-cointer-title">Компания <span>«Мастера ремонта»</span> в Москве</div>
     <div class="main-container-description">
-      Сделаем качественный ремонт квартиры под ключ.<span>Расширенная<br/>гарантия до 3х лет.</span> Подбор, закупка
-      и доставка материала.
+      Сделаем качественный ремонт квартиры под ключ.<span
+        >Расширенная<br />гарантия до 3х лет.</span
+      >
+      Подбор, закупка и доставка материала.
     </div>
     <div class="submission-form">
       <input
@@ -19,7 +21,7 @@
       />
       <button class="btn">Заказать звонок</button>
     </div>
-  </div>
+  </form>
 </template>
 
 <style scoped>
@@ -51,12 +53,14 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+
 .main-container-description {
   font-size: 16px;
   line-height: 18.75px;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 25px;
 }
+
 .main-container-description span {
   color: #fff;
 }
@@ -89,34 +93,38 @@
   border: none;
 }
 
-@media (max-width: 1085px){
-    .submission-form {
-        display: block;
-        border: 0;
-        background: transparent;
-        box-shadow: none;
-    }
-    .submission-form > * {
-        display: block;
-    }
-    .submission-form input {
-      background: #202020;
-      border: 1px solid #818181;
-      box-shadow: inset 0px 0px 15px 11px rgba(0, 0, 0, 0.25);
-      border-radius: 60px;
-      width: 100%;
-      height: 60px;
-    }
-    .main-cointer-title {
-      font-size: 20px;
-    }
-    .main-container-description {
-      font-size: 14px;
-    }
+@media (max-width: 1085px) {
+  .submission-form {
+    display: block;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .main-container-description {
+    margin-bottom: 20px;
+  }
+  .submission-form > * {
+    display: block;
+  }
+  .submission-form input {
+    background: #202020;
+    border: 1px solid #818181;
+    box-shadow: inset 0px 0px 15px 11px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 6px;
+  }
+  .main-cointer-title {
+    font-size: 20px;
+  }
+  .main-container-description {
+    font-size: 14px;
+  }
 
-    .submission-form .btn {
-      width: 100%;
-      border: none;
-    }
+  .submission-form .btn {
+    width: 100%;
+    border: none;
+  }
 }
 </style>
