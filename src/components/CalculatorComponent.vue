@@ -15,10 +15,10 @@ const radio1 = ref('New York')
       </div>
       <div>
         <el-radio-group v-model="radio1" size="large">
-          <el-radio-button label="New York" />
-          <el-radio-button label="Washington" />
-          <el-radio-button label="Los Angeles" />
-          <el-radio-button label="Chicago" />
+          <el-radio-button label="1" />
+          <el-radio-button label="2"/>
+          <el-radio-button label="3" />
+          <el-radio-button label="4+" />
         </el-radio-group>
       </div>
     </div>
@@ -27,16 +27,14 @@ const radio1 = ref('New York')
 
 <style scoped>
 .main-container {
-  width: 570px;
-  height: 538px;
-  /* background: rgba(255, 255, 255, 0.1); */
-  background: red;
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 40px;
 }
 
 .flex-str {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 

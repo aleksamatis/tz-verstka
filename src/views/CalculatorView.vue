@@ -1,17 +1,16 @@
 <script setup>
-import FormSubmissionComponent from '@/components/FormSubmissionComponent.vue'
 import HeaderNavComponent from '@/components/HeaderNavComponent.vue'
 import CardsContentComponent from '@/components/CardsContentComponent.vue'
 import ClientsComponent from '@/components/ClientsComponent.vue'
 import DetailDesignComponent from '@/components/DetailDesignComponent.vue'
-import CalculatorComponent from '@/components/CalculatorComponent.vue'
+import TextComponent from '@/components/TextComponent.vue'
 </script>
 
 <template>
   <header>
     <HeaderNavComponent />
     <div class="header-content">
-      <FormSubmissionComponent class="header-submission" />
+      <TextComponent class="header-submission" />
       <ClientsComponent class="header-clients" />
       <CalculatorComponent class="header-calculator" />
     </div>
