@@ -48,7 +48,6 @@
   max-width: 1170px;
   margin: 0 auto;
   flex-wrap: wrap;
-  gap: 20px;
 }
 .cards-content > div {
   width: 50%;

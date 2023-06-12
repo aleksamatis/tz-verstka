@@ -81,10 +81,14 @@ header {
   .header-content {
     grid-template-areas:
       'submission'
-      'clients'
-      'gallery';
+      'gallery'
+      'clients';
     row-gap: 20px;
     grid-template-columns: 1fr;
+  }
+
+  .header-clients { 
+    padding-top: 128px;
   }
 
   .header-left {
