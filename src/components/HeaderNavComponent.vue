@@ -54,6 +54,7 @@
   height: 35px;
   background: linear-gradient(132.92deg, #1c6cd1 9.16%, #0b74a8 87.83%);
   border-radius: 60px;
+  cursor: pointer;
 }
 .roundphone img {
   width: 21px;
@@ -68,6 +69,7 @@
   background: transparent;
   border-radius: 60px;
   border: 1px solid #fff;
+  cursor: pointer;
 }
 .baselinemenu img {
   width: 21px;

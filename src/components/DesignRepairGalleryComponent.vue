@@ -14,12 +14,17 @@ const itemIndex = ref(0)
         :initial-index="0"
         @change="itemIndex = $event + 1"
         :autoplay="false"
+        arrow="never"
       >
         <el-carousel-item v-for="item in 4" :key="item">
           <img class="gallery-image" src="@/assets/images/image1.jpg" alt="" />
         </el-carousel-item>
       </el-carousel>
-
+      <div class="carousel-buttons">
+        <img src="@/assets/images/arrowleft.svg" />
+        <img src="@/assets/images/ellipse.svg" />
+        <img src="@/assets/images/arrow.svg" />
+      </div>
       <div class="description-gallery-counter">
         <div>
           <div class="title">Дизайнерский ремонт</div>
@@ -55,6 +60,25 @@ const itemIndex = ref(0)
   aspect-ratio: 1.1;
 }
 
+.carousel-buttons {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 60px;
+  bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.carousel-buttons img {
+  padding: 10px;
+}
 .main-gallery div.title {
   color: #fff;
   font-family: 'Prosto One';
@@ -92,6 +116,7 @@ const itemIndex = ref(0)
 ::v-deep(.el-carousel) {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 ::v-deep(.el-carousel__container) {
@@ -101,7 +126,6 @@ const itemIndex = ref(0)
 ::v-deep(.el-carousel__item) {
   border-radius: 40px;
 }
-
 .main-container-transformed {
   height: 516px;
   background: rgba(255, 255, 255, 0.1);
