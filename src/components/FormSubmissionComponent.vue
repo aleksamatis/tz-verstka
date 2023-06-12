@@ -41,6 +41,7 @@
   text-transform: uppercase;
   font-family: 'Prosto One';
   margin-bottom: 25px;
+  line-height: 49px;
 }
 .main-cointer-title span {
   background: linear-gradient(
@@ -52,6 +53,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  line-height: 49px;
 }
 
 .main-container-description {
@@ -59,10 +61,14 @@
   line-height: 18.75px;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 25px;
+  line-height: 19px;
+  font-weight: 400;
 }
 
 .main-container-description span {
   color: #fff;
+  line-height: 19px;
+  font-weight: 400;
 }
 .submission-form {
   display: flex;
