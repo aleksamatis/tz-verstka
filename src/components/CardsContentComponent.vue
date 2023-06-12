@@ -174,5 +174,9 @@
   .cards-content-item div span {
     font-size: 18px;
   }
+
+  .btn {
+    width: 100%;
+  }
 }
 </style>
