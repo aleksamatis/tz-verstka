@@ -30,6 +30,7 @@ header {
     #1f1f1f 77.76%,
     #0a2756 107.16%
   );
+  overflow: hidden;
 }
 
 @media (max-width: 1770px) {
@@ -55,6 +56,7 @@ header {
   column-gap: 49px;
   max-width: 1170px;
   margin: 0 auto;
+  padding-bottom: 120px;
 }
 
 .header-submission {

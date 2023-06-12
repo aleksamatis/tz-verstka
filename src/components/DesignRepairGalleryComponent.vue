@@ -42,7 +42,6 @@ const itemIndex = ref(0)
 <style scoped>
 .main-container {
   position: relative;
-  overflow: hidden;
 }
 
 .main-gallery {
