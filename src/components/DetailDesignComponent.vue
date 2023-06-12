@@ -16,6 +16,7 @@
 }
 .main-container-down {
   position: relative;
+  z-index: 0;
 }
 .main-container-upper {
   position: absolute;
@@ -35,6 +36,7 @@
     display: block;
     display: flex;
     justify-content: center;
+    z-index: -10;
   }
 }
 </style>

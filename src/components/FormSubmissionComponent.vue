@@ -4,9 +4,7 @@
   <form class="main-container">
     <div class="main-cointer-title">Компания <span>«Мастера ремонта»</span> в Москве</div>
     <div class="main-container-description">
-      Сделаем качественный ремонт квартиры под ключ.<span
-        >Расширенная гарантия до 3х лет.</span
-      >
+      Сделаем качественный ремонт квартиры под ключ.<span>Расширенная гарантия до 3х лет.</span>
       Подбор, закупка и доставка материала.
     </div>
     <div class="submission-form">

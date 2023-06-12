@@ -4,9 +4,7 @@
   <div class="main-container">
     <div class="main-cointer-title">Компания <span>«Мастера ремонта»</span> в Москве</div>
     <div class="main-container-description">
-      Сделаем качественный ремонт квартиры под ключ.<span
-        >Расширенная гарантия до 3х лет.</span
-      >
+      Сделаем качественный ремонт квартиры под ключ.<span>Расширенная гарантия до 3х лет.</span>
       Подбор, закупка и доставка материала.
     </div>
   </div>
@@ -50,7 +48,6 @@
 }
 
 @media (max-width: 1085px) {
-
   .main-container-description {
     margin-bottom: 20px;
   }
@@ -60,6 +57,5 @@
   .main-container-description {
     font-size: 14px;
   }
-
 }
 </style>
