@@ -30,6 +30,7 @@ const radio1 = ref('New York')
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 40px;
+  padding: 30px;
 }
 
 .flex-str {
@@ -62,5 +63,12 @@ const radio1 = ref('New York')
 }
 .slider-block .demonstration + .el-slider {
   flex: 0 0 70%;
+}
+
+::v-deep(.el-radio-button) .el-radio-button__inner {
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
+  line-height: 27px;
 }
 </style>
