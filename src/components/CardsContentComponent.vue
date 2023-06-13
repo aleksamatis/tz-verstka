@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <div class="cards-content">
-      <div class="cards-content-item">
+      <div class="cards-content-item item">
         <div>
           <div class="cards-content-item-complectator">
             Комплектатор
@@ -11,15 +11,15 @@
         </div>
         <button class="btn">Узнать подробнее</button>
       </div>
-      <div class="cards-content-item-3">
+      <div class="cards-content-item-3 item">
         <h2>Подберем, доставим</h2>
         <span>черновой материал со склада,<br />отчитаемся и выкупим остатки</span>
       </div>
-      <div class="cards-content-item-2">
+      <div class="cards-content-item-2 item">
         <h2>Поможем</h2>
         <span>с дизайном и планировкой.<br />Проследим за реализацией<br />во время ремонта</span>
       </div>
-      <div class="cards-content-item-1">
+      <div class="cards-content-item-1 item">
         <h2>Сделаем мебель</h2>
         <span
           >и кухонный гарнитур по ценам 7-10%<br />ниже рынка. Своё производство, склад<br />и
@@ -52,18 +52,16 @@
 .cards-content > div {
   width: 50%;
 }
-.cards-content-item {
-  width: 570px;
-}
+
 .cards-content-item-1 {
   width: 570px;
   height: 261px;
   border-radius: 30px;
   padding: 30px;
   background-repeat: no-repeat;
-  background-position: right;
-  background: url('@/assets/images/backgroundimg1.svg'),
+  background: url('@/assets/images/backgroundimg1.svg') no-repeat,
     linear-gradient(282.48deg, rgba(9, 117, 163, 0.89) -2.44%, rgba(101, 165, 255, 0.52) 105.31%);
+  color: #000;
 }
 
 .cards-content-item-2 {
@@ -87,6 +85,7 @@
     linear-gradient(282.48deg, #e7f6ff -2.44%, rgba(243, 243, 243, 0.5) 105.31%);
   background-repeat: no-repeat;
   background-position: right;
+  color: #000;
 }
 
 .cards-content h2 {
@@ -164,17 +163,54 @@
     justify-content: center;
     padding-left: 83px;
     padding-right: 83px;
+    display: block;
   }
+
+
+.cards-content .item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.cards-content .item h2 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.cards-content .item span {
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.cards-content .item:last-child {
+  margin-bottom: 0;
+}
+
+.cards-content-item-1 {
+  background-position: right bottom;
+  background-size: 100%;
+  padding-right: 30%;
+}
+
+.cards-content-item-3 {
+  background: right bottom / 150% no-repeat url('@/assets/images/backgroundimg3.svg'),
+    linear-gradient(282.48deg, #e7f6ff -2.44%, rgba(243, 243, 243, 0.5) 105.31%);
+  padding-right: 30%;
+}
 
   .cards-content-item div {
     font-size: 18px;
+    line-height: 22px;
   }
 
   .cards-content-item div span {
     font-size: 18px;
+    line-height: 22px;
   }
 
   .btn {
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 100%;
   }
 }

@@ -13,6 +13,11 @@
 .main-container {
   display: flex;
   justify-content: center;
+  
+  background: url('@/assets/images/header-background.svg');
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center bottom;
 }
 .main-container-down {
   position: relative;
@@ -37,6 +42,11 @@
     display: flex;
     justify-content: center;
     z-index: -10;
+
+    background: url('@/assets/images/header-background.svg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center bottom;
   }
 }
 </style>

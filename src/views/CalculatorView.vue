@@ -78,8 +78,8 @@ header {
   .header-content {
     grid-template-areas:
       'submission'
-      'clients'
-      'gallery';
+      'gallery'
+      'clients';
     row-gap: 20px;
     grid-template-columns: 1fr;
   }
