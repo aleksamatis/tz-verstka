@@ -87,7 +87,7 @@ header {
     grid-template-columns: 1fr;
   }
 
-  .header-clients { 
+  .header-clients {
     padding-top: 128px;
   }
 

@@ -2,28 +2,32 @@
 import { ref } from 'vue'
 
 const itemIndex = ref(0)
+const carousel = ref()
 </script>
 <template>
   <div class="main-container">
     <div class="main-container-transformed-2"></div>
     <div class="main-container-transformed"></div>
     <div class="main-gallery">
-      <el-carousel
-        class="main-gallery-carousel"
-        indicator-position="outside"
-        :initial-index="0"
-        @change="itemIndex = $event + 1"
-        :autoplay="false"
-        arrow="never"
-      >
-        <el-carousel-item v-for="item in 4" :key="item">
-          <img class="gallery-image" src="@/assets/images/image1.jpg" alt="" />
-        </el-carousel-item>
-      </el-carousel>
-      <div class="carousel-buttons">
-        <img src="@/assets/images/arrowleft.svg" />
-        <img src="@/assets/images/ellipse.svg" />
-        <img src="@/assets/images/arrow.svg" />
+      <div>
+        <el-carousel
+          class="main-gallery-carousel"
+          indicator-position="outside"
+          :initial-index="0"
+          @change="itemIndex = $event + 1"
+          :autoplay="false"
+          arrow="never"
+          ref="carousel"
+        >
+          <el-carousel-item v-for="item in 4" :key="item">
+            <img class="gallery-image" src="@/assets/images/image1.jpg" alt="" />
+          </el-carousel-item>
+        </el-carousel>
+        <div class="carousel-buttons">
+          <img src="@/assets/images/arrowleft.svg" @click="carousel.prev()" />
+          <img src="@/assets/images/ellipse.svg" />
+          <img src="@/assets/images/arrow.svg" @click="carousel.next()" />
+        </div>
       </div>
       <div class="description-gallery-counter">
         <div>
@@ -68,7 +72,7 @@ const itemIndex = ref(0)
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 60px;
-  bottom: 120px;
+  bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;

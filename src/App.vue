@@ -9,6 +9,6 @@ import { RouterView } from 'vue-router'
 <style>
 body {
   background: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 </style>
-

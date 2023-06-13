@@ -13,7 +13,7 @@
 .main-container {
   display: flex;
   justify-content: center;
-  
+
   background: url('@/assets/images/header-background.svg');
   background-repeat: no-repeat;
   background-size: 120%;
