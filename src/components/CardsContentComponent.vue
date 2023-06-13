@@ -43,16 +43,15 @@
   border-radius: 60px;
 }
 .cards-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   max-width: 1170px;
   margin: 0 auto;
   flex-wrap: wrap;
   padding-top: 70px;
 }
-.cards-content > div {
-  width: 50%;
-}
+
 .cards-content-item-3 .item {
   padding-left: 15px;
 }
@@ -104,6 +103,11 @@
   font-size: 14px;
   line-height: 15px;
 }
+
+.cards-content .item {
+  width: 100%;
+}
+
 .cards-content .cards-content-item-2 h2 {
   font-family: 'Prosto One';
   font-weight: 400px;
