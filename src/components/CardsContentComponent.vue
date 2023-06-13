@@ -48,11 +48,14 @@
   max-width: 1170px;
   margin: 0 auto;
   flex-wrap: wrap;
+  padding-top: 70px;
 }
 .cards-content > div {
   width: 50%;
 }
-
+.cards-content-item-3 .item {
+  padding-left: 15px;
+}
 .cards-content-item-1 {
   width: 570px;
   height: 261px;

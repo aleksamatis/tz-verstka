@@ -37,4 +37,13 @@ const rooms = ref('1')
 ::v-deep(.el-radio-button__original-radio:checked + .el-radio-button__inner) {
   box-shadow: inset 0px 0px 15px 11px rgba(0, 0, 0, 0.17);
 }
+
+.calculator-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  padding-bottom: 10px;
+}
 </style>

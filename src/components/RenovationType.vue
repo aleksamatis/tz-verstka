@@ -30,7 +30,7 @@ function onVisibleChange(show) {
 </script>
 <template>
   <div class="rennovation-type">
-    <div>Какой ремонт хотите?</div>
+    <div class="calculator-title">Какой ремонт хотите?</div>
     <el-select
       v-model="renovationType"
       class="m-2"
@@ -100,5 +100,14 @@ function onVisibleChange(show) {
 .renovation-popper .el-popper__arrow {
   display: none;
   top: -40px;
+}
+
+.calculator-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  padding-bottom: 10px;
 }
 </style>
