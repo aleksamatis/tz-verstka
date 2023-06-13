@@ -50,6 +50,7 @@
   margin: 0 auto;
   flex-wrap: wrap;
   padding-top: 70px;
+  gap: 30px;
 }
 
 .cards-content-item-3 .item {
